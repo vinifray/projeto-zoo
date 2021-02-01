@@ -28,7 +28,7 @@ public class Main {
 
         boolean continuar = true;
         while (continuar){
-            System.out.println("Digite: \n1 para cadastrar \n2 para pesquisar");
+            System.out.println("Digite: \n1 para cadastrar \n2 para pesquisar \n3 para sair");
             int resposta = criarScanner().nextInt();
 
             if(resposta == 1){
@@ -45,6 +45,9 @@ public class Main {
                 }else{
                     System.out.println("O zooligo "+nomeZoologico+" não existe, meu jovem.");
                 }
+            }else if(resposta == 3){
+                continuar = false;
+                System.out.println("Que pena que vc vai embora. Volte sempre");
             }
 
         }
