@@ -28,7 +28,7 @@ public class Main {
 
         boolean continuar = true;
         while (continuar){
-            System.out.println("Digite: \n1 para cadastrar");
+            System.out.println("Digite: \n1 para cadastrar \n2 para pesquisar");
             int resposta = criarScanner().nextInt();
 
             if(resposta == 1){
