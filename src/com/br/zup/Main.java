@@ -36,6 +36,15 @@ public class Main {
                 String zoologico = criarScanner().nextLine();
                 List<String> animais = criarListaDeAnimais();
                 dicionarioAnimais.put(zoologico, animais);
+            }else if(resposta == 2){
+                System.out.println("Digite o nome do zoologico");
+                String nomeZoologico = criarScanner().nextLine();
+                if(dicionarioAnimais.containsKey(nomeZoologico)){
+                    System.out.println("No zoologico "+nomeZoologico+" tem os seguintes animais: "
+                            +dicionarioAnimais.get(nomeZoologico));
+                }else{
+                    System.out.println("O zooligo "+nomeZoologico+" não existe, meu jovem.");
+                }
             }
 
         }
